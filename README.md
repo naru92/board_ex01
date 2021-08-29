@@ -2,15 +2,15 @@
 ## 로그인 게시판 2021-06-22 작성
 
 ** 특이사항 ** 
-@requestParam
-게시판 번호의 값, 게시물의 번호,  페이징시 페이지 값을 받기위해 사용
+**@requestParam**<br />
+게시판 번호의 값, 게시물의 번호,  페이징시 페이지 값을 받기위해 사용<br />
 
 
 
-@ModelAttribute
-CRUD구현시 특정 게시물의 객체를 이름으로 구분하기 위해 사용 
-EX) 글쓰기 - writeContentBean
-    글수정 - modifyContentBean
+**@ModelAttribute** <br />
+CRUD구현시 특정 게시물의 객체를 이름으로 구분하기 위해 사용<br /> 
+**EX)** 글쓰기 - writeContentBean<br />
+    글수정 - modifyContentBean<br />
     
 ```
 	@GetMapping("/write")
@@ -45,8 +45,8 @@ EX) 글쓰기 - writeContentBean
 	}
 ```
 
-@Valid
-유효성 검사시 JSR-303 제약 조건을 사용
+**@Valid** <br />
+유효성 검사시 JSR-303 제약 조건을 사용<br />
 
 ```
 //UserBean.java
@@ -88,6 +88,3 @@ EX) 글쓰기 - writeContentBean
 	private String content_writer_name;
 
 ```
-
-
-
